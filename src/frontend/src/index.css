@@ -63,15 +63,6 @@
     font-family: "Orbitron", sans-serif;
   }
 
-  /* City bridge fixed background */
-  .city-bg {
-    background-image: url("/assets/generated/city-bridge-bg.dim_1920x1080.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
   /* Glassmorphism card */
   .glass-card {
     background: rgba(0, 0, 0, 0.45);
@@ -184,6 +175,24 @@
       rgba(168, 85, 247, 0.4),
       transparent
     );
+  }
+
+  /* Rain animation */
+  @keyframes rain-fall {
+    0% {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
   }
 
   /* Particles */

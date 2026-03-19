@@ -42,10 +42,9 @@ export default function HeroSection() {
         {/* Trust badges */}
         <div className="fade-up-delay-3 flex flex-wrap justify-center gap-3">
           {[
-            { icon: "👥", text: "500+ Members" },
-            { icon: "✅", text: "Verified Seller" },
-            { icon: "⚡", text: "Instant Delivery" },
-            { icon: "🛡️", text: "24/7 Support" },
+            { icon: "✔", text: "Legit & Trusted" },
+            { icon: "✔", text: "Proof Available" },
+            { icon: "✔", text: "Active Community" },
           ].map((badge) => (
             <div
               key={badge.text}
@@ -56,7 +55,7 @@ export default function HeroSection() {
                 color: "#00f5ff",
               }}
             >
-              <span>{badge.icon}</span>
+              <span style={{ color: "#00f5ff" }}>{badge.icon}</span>
               <span className="font-orbitron">{badge.text}</span>
             </div>
           ))}

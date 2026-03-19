@@ -11,7 +11,45 @@ import Navbar from "./components/Navbar";
 import StoreSection from "./components/StoreSection";
 import { useActor } from "./hooks/useActor";
 
-const PARTICLE_COUNT = 20;
+const RAIN_COUNT = 80;
+const PARTICLE_COUNT = 18;
+
+function RainEffect() {
+  const drops = Array.from({ length: RAIN_COUNT }, (_, i) => ({
+    id: i,
+    left: `${Math.random() * 100}%`,
+    duration: `${0.6 + Math.random() * 0.8}s`,
+    delay: `${Math.random() * 2}s`,
+    opacity: 0.2 + Math.random() * 0.4,
+    height: `${12 + Math.random() * 20}px`,
+  }));
+
+  return (
+    <div
+      className="fixed inset-0 pointer-events-none z-0 overflow-hidden"
+      aria-hidden="true"
+    >
+      {drops.map((d) => (
+        <div
+          key={d.id}
+          style={{
+            position: "absolute",
+            left: d.left,
+            top: "-30px",
+            width: "1px",
+            height: d.height,
+            background: `linear-gradient(180deg, transparent, rgba(0,245,255,${d.opacity}))`,
+            animationName: "rain-fall",
+            animationDuration: d.duration,
+            animationDelay: d.delay,
+            animationTimingFunction: "linear",
+            animationIterationCount: "infinite",
+          }}
+        />
+      ))}
+    </div>
+  );
+}
 
 function Particles() {
   const particles = Array.from({ length: PARTICLE_COUNT }, (_, i) => ({
@@ -68,14 +106,16 @@ function MainApp() {
       className="min-h-screen relative"
       style={{
         backgroundImage:
-          "url('/assets/generated/city-bridge-bg.dim_1920x1080.jpg')",
+          "url('/assets/generated/cyberpunk-bridge-bg.dim_1920x1080.jpg')",
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       {/* Dark overlay */}
-      <div className="fixed inset-0 bg-black/65 z-0" aria-hidden="true" />
+      <div className="fixed inset-0 bg-black/60 z-0" aria-hidden="true" />
+      {/* Rain effect */}
+      <RainEffect />
       {/* Ambient particles */}
       <Particles />
 
