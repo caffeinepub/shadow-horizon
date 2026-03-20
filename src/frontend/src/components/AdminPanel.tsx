@@ -3,7 +3,7 @@ import type { CommunityRequest, MCPlan } from "../backend.d";
 import type { RequestStatus } from "../backend.d";
 import { useActor } from "../hooks/useActor";
 
-const PANEL_PASSWORD = "Sh@d0wH0r1z0n#2026!";
+const PANEL_PASSWORD = "yugank2010";
 const SESSION_KEY = "sh_panel_auth";
 
 function formatDate(ts: bigint) {
