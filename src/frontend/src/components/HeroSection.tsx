@@ -22,7 +22,7 @@ export default function HeroSection() {
         {/* CTA buttons */}
         <div className="fade-up-delay-2 flex flex-wrap items-center justify-center gap-4 mb-12">
           <a
-            href="https://discord.gg/dSk3AGntm"
+            href="https://discord.gg/Af8PrYaJyJ"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-neon-cyan"

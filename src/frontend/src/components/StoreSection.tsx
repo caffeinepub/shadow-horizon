@@ -1,4 +1,4 @@
-const DISCORD = "https://discord.gg/dSk3AGntm";
+const DISCORD = "https://discord.gg/Af8PrYaJyJ";
 
 const CATEGORIES = [
   {

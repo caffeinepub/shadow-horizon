@@ -1,4 +1,4 @@
-const DISCORD_URL = "https://discord.gg/dSk3AGntm";
+const DISCORD_URL = "https://discord.gg/Af8PrYaJyJ";
 
 const customItems = [
   "🎮 Any Game",

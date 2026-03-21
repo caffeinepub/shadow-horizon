@@ -611,9 +611,9 @@ function SettingsTab() {
         <h3 className="font-orbitron text-xs uppercase tracking-widest text-[#00f5ff] mb-4">
           Discord Server
         </h3>
-        <p className="text-white/70 text-sm">https://discord.gg/dSk3AGntm</p>
+        <p className="text-white/70 text-sm">https://discord.gg/Af8PrYaJyJ</p>
         <a
-          href="https://discord.gg/dSk3AGntm"
+          href="https://discord.gg/Af8PrYaJyJ"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-neon-purple text-xs mt-4 inline-block"

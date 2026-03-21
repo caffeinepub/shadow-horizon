@@ -183,7 +183,7 @@ export default function InviteRewardsSection() {
             ))}
           </div>
           <a
-            href="https://discord.gg/dSk3AGntm"
+            href="https://discord.gg/Af8PrYaJyJ"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-neon-purple"
@@ -195,7 +195,7 @@ export default function InviteRewardsSection() {
 
         <div className="text-center">
           <a
-            href="https://discord.gg/dSk3AGntm"
+            href="https://discord.gg/Af8PrYaJyJ"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-neon-cyan"

@@ -1,4 +1,4 @@
-const DISCORD_URL = "https://discord.gg/dSk3AGntm";
+const DISCORD_URL = "https://discord.gg/Af8PrYaJyJ";
 
 const contactItems = [
   { icon: "🛡️", label: "Support", desc: "Get help with any issue or question." },
@@ -62,7 +62,7 @@ export default function ContactSection() {
             Join our Discord for instant support:
           </p>
           <p className="font-orbitron text-[#20E6FF] glow-cyan text-xl mb-6 break-all">
-            discord.gg/dSk3AGntm
+            discord.gg/Af8PrYaJyJ
           </p>
           <a
             href={DISCORD_URL}

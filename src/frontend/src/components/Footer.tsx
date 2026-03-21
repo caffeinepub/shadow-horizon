@@ -50,7 +50,7 @@ export default function Footer() {
               Community
             </h4>
             <a
-              href="https://discord.gg/dSk3AGntm"
+              href="https://discord.gg/Af8PrYaJyJ"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-neon-purple inline-block text-xs"

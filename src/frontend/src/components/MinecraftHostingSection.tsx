@@ -127,7 +127,7 @@ export default function MinecraftHostingSection() {
                   ))}
                 </ul>
                 <a
-                  href="https://discord.gg/dSk3AGntm"
+                  href="https://discord.gg/Af8PrYaJyJ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={
